@@ -67,6 +67,9 @@ PRODUCT_COPY_FILES += \
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti \
     android.hardware.renderscript@1.0-impl \

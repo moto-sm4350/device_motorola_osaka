@@ -41,3 +41,6 @@ vendor.mm.enable.qcom_parser=16777215
 
 # Netflix
 ro.netflix.bsp_rev=Q4350-32962-1
+
+# Performance
+ro.vendor.extension_library=libqti-perfd-client.so

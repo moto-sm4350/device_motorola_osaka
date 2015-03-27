@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/holi/holi.mk)
 $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/qssi/qssi.mk)
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 

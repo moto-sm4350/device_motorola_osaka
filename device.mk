@@ -169,6 +169,12 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Update Engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
 # USB
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 

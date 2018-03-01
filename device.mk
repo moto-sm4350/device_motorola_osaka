@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/motorola/osaka-kernel/Image:kernel
 
+# Initialization
+PRODUCT_PACKAGES += \
+    init.qcom.recovery.rc
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 

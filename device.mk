@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Kernel
 PRODUCT_COPY_FILES += \
     device/motorola/osaka-kernel/Image:kernel

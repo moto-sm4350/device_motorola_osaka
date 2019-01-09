@@ -137,7 +137,11 @@ $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30

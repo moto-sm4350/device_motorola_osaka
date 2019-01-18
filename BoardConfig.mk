@@ -52,6 +52,9 @@ BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/osaka-kernel
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := false
 
+# Display
+TARGET_SCREEN_DENSITY := 400
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \

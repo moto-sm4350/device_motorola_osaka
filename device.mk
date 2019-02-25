@@ -72,6 +72,11 @@ PRODUCT_PACKAGES += \
     bootctrl.holi \
     bootctrl.holi.recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
+
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 

@@ -133,6 +133,9 @@ PRODUCT_PACKAGES += \
 # Utils
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
+# QMI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

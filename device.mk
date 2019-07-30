@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

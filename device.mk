@@ -86,9 +86,8 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
+# Data
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
@@ -101,6 +100,10 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     libtinyxml \
     lights.qcom
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
 
 # Fastboot
 PRODUCT_PACKAGES += \

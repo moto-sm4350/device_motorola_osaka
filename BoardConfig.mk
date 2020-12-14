@@ -67,6 +67,9 @@ TARGET_SCREEN_DENSITY := 400
 QC_OPEN_ROOT := vendor/qcom/sm8350/codeaurora
 QC_OPEN_PATH := $(QC_OPEN_ROOT)
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/mot_aids.fs
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml

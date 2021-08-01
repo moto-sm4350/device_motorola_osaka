@@ -4,5 +4,8 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 # Charger
 ro.charger.enable_suspend=1
 
+# DPM
+persist.vendor.dpm.feature=1
+
 # Telephony
 ro.telephony.default_network=27,10

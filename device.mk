@@ -16,6 +16,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    device/motorola/osaka-kernel/Image:kernel
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 

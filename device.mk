@@ -31,6 +31,11 @@ $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # Kernel
 PRODUCT_COPY_FILES += \
     device/motorola/osaka-kernel/Image:kernel

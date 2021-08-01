@@ -54,6 +54,8 @@ BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/osaka-kernel
 BOARD_KERNEL_SEPARATED_DTBO := false
 
 # Display
+include hardware/qcom-caf/sm8350/display/config/display-board.mk
+
 TARGET_SCREEN_DENSITY := 400
 
 # HIDL

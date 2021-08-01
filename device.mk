@@ -24,6 +24,9 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Display
+$(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd

@@ -67,6 +67,9 @@ PRODUCT_COPY_FILES += \
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.qti
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd

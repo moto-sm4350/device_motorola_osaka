@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Audio
+$(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/holi/holi.mk)
+$(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/qssi/qssi.mk)
+
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 

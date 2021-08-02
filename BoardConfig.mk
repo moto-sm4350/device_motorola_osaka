@@ -80,7 +80,9 @@ QC_OPEN_ROOT := vendor/qcom/sm8350/codeaurora
 QC_OPEN_PATH := $(QC_OPEN_ROOT)
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/mot_aids.fs
+TARGET_FS_CONFIG_GEN := \
+    $(DEVICE_PATH)/config.fs \
+    $(DEVICE_PATH)/mot_aids.fs
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \

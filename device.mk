@@ -27,6 +27,12 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.bcl.enabled=false \
+    persist.vendor.audio.speaker.prot.enable=false \
+    persist.vendor.audio.vbat.enabled=false \
+    vendor.audio.spkr_prot.tx.sampling_rate=0
+
 $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/holi/holi.mk)
 $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/qssi/qssi.mk)
 

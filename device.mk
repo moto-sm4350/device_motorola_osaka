@@ -28,7 +28,8 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    OsakaFrameworks
+    OsakaFrameworks \
+    OsakaSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

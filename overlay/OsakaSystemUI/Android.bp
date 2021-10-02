@@ -1,0 +1,9 @@
+//
+// Copyright (C) 2021 The Raphielscape LLC. and The helluvaOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "OsakaSystemUI",
+    vendor: true,
+}

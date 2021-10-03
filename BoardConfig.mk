@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/motorola/osaka
+
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
 # A/B
@@ -88,3 +90,5 @@ TARGET_BOARD_PLATFORM := holi
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/recovery.fstab
+

@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
     device/motorola/osaka-kernel/Image:kernel
 
 # Initialization
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 PRODUCT_PACKAGES += \
     init.qcom.recovery.rc
 

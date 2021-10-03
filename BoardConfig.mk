@@ -56,6 +56,13 @@ BOARD_KERNEL_SEPARATED_DTBO := false
 # Display
 TARGET_SCREEN_DENSITY := 400
 
+# HIDL
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/manifest.xml
+
+DEVICE_MATRIX_FILE := \
+    $(DEVICE_PATH)/compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \

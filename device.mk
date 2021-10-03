@@ -43,7 +43,9 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc
 
 # Namespaces
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/sm8350/display
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *

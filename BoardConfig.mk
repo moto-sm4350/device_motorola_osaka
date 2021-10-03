@@ -62,6 +62,8 @@ BOARD_KERNEL_SEPARATED_DTBO := false
 include hardware/qcom-caf/sm8350/display/config/display-board.mk
 
 TARGET_SCREEN_DENSITY := 400
+QC_OPEN_ROOT := vendor/qcom/sm8350/codeaurora
+QC_OPEN_PATH := $(QC_OPEN_ROOT)
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \

@@ -64,6 +64,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/motorola/osaka-kernel/Image:kernel
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/motorola/osaka-kernel/holi/kernel-headers
+
 # Initialization
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
@@ -118,6 +121,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+
+# Utils
+$(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30

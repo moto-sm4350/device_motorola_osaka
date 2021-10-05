@@ -6,9 +6,13 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_osaka.mk \
     $(LOCAL_DIR)/hentai_osaka.mk
 
 COMMON_LUNCH_CHOICES := \
+    aosp_osaka-eng \
+    aosp_osaka-user \
+    aosp_osaka-userdebug \
     hentai_osaka-eng \
     hentai_osaka-user \
     hentai_osaka-userdebug

@@ -9,6 +9,13 @@ DEVICE_PATH := device/motorola/osaka
 
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
+# Workarounds
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \

@@ -95,6 +95,9 @@ DEVICE_MATRIX_FILE := \
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
+    androidboot.hab.csv=5 \
+    androidboot.hab.product=denver \
+    androidboot.hab.cid=50 \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.selinux=permissive \

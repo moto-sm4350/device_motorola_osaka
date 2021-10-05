@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+[AID_VENDOR_RFS]
+value: 2951
+
 [AID_VENDOR_MOT_ACCY]
 value: 5000
 

@@ -80,7 +80,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 PRODUCT_PACKAGES += \
-    init.qcom.recovery.rc
+    init.qcom.recovery.rc \
+    init.mmi.rc \
+    init.mmi.chipset.rc \
+    init.mmi.overlay.rc \
+    init.mmi.usb.rc \
+    init.qcom.rc \
+    init.target.rc
 
 # Media
 PRODUCT_COPY_FILES += \

@@ -134,7 +134,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service
 
 # Utils
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)

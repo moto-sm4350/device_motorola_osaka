@@ -145,6 +145,9 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.target.rc
 
+# Interfaces
+$(call inherit-product, $(LOCAL_PATH)/device-interfaces.mk)
+
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \

@@ -4,6 +4,15 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+// FSTab
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "init.fstab",
+    filename: "fstab.qcom",
+    vendor: true,
+}
+
 // Recovery
 
 prebuilt_etc {
@@ -57,3 +66,11 @@ prebuilt_etc {
     vendor: true,
 }
 
+// UEventD
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    src: "ueventd.rc",
+    filename: "ueventd.rc",
+    vendor: true,
+}

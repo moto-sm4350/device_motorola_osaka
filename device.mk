@@ -195,6 +195,10 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx.vendor \
     libstagefrighthw
 
+# MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

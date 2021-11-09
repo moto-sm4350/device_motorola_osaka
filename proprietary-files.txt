@@ -1638,7 +1638,7 @@ vendor/lib64/vendor.trustonic.teeregistry@1.0.so
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine-denver.conf
+vendor/etc/thermal-engine-denver.conf|0c014603c305db8c69ca4c9c1a589cb9f341eb85
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so

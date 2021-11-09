@@ -258,6 +258,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
+    ims-moto-libs \
+    qcrilhook \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
@@ -265,6 +267,8 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
+    ims-moto-libs \
+    qcrilhook \
     telephony-ext
 
 # Thermal

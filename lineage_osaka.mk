@@ -33,7 +33,7 @@ BUILD_GMS=yes
 PRODUCT_NAME := lineage_osaka
 PRODUCT_DEVICE := osaka
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola Edge S
+PRODUCT_MODEL := moto g stylus 5g
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -47,12 +47,12 @@ TARGET_SCREEN_WIDTH := 1080
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=osaka \
-    PRIVATE_BUILD_DESC="nio_retcn-user 11 RRN31.Q1-20-31-3 ab59a release-keys"
+    PRIVATE_BUILD_DESC="denver_global-user 11 RRES31.Q2-11-52-4 7f8df1 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:12/SP1A.210812.015/7679548:user/release-keys
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true

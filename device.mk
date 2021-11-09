@@ -137,13 +137,6 @@ PRODUCT_PACKAGES += \
      libhidltransport.vendor \
      libhwbinder.vendor
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    device/motorola/osaka-kernel/Image:kernel
-
-# Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/motorola/osaka-kernel/holi/kernel-headers
-
 # Initialization
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom

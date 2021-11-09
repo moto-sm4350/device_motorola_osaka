@@ -4,4 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Height of the status bar header bar when on Keyguard -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_portrait</dimen>
 </resources>

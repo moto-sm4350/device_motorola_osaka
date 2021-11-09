@@ -155,13 +155,16 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.recovery.rc \
     init.mmi.rc \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \
     init.mmi.usb.rc \
     init.qcom.rc \
+    init.qcom.recovery.rc \
     init.target.rc \
+    init.class_main.sh \
+    init.qcom.sh \
+    init.qcom.early_boot.sh \
     ueventd.qcom.rc
 
 # Interfaces

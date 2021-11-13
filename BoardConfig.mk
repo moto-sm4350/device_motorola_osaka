@@ -2,6 +2,7 @@
 # Copyright (C) 2021 The LineageOS Project
 # Copyright (C) 2021 The Raphielscape LLC. and The helluvaOS Project
 # Copyright (C) 2021 The LineageOS Modded Project
+# Copyright (C) 2021 StatiXOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -176,7 +177,6 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := false
 
 # Platform
 TARGET_BOARD_PLATFORM := holi
-QCOM_BOARD_PLATFORMS += holi
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true

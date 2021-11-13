@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2021 The LineageOS Project
 # Copyright (C) 2021 The Raphielscape LLC. and The helluvaOS Project
+# Copyright (C) 2021 StatiXOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -142,6 +143,10 @@ PRODUCT_COPY_FILES += \
 
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
+# Hardware
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := holi
 
 # Health
 PRODUCT_PACKAGES += \

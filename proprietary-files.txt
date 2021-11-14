@@ -810,6 +810,7 @@ vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib/libC2D2.so
+vendor/lib/libqrtrclient.so
 vendor/lib/libCB.so
 vendor/lib/libEGL_adreno.so
 vendor/lib/libOpenCL.so
@@ -847,6 +848,7 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqseed3.so
+vendor/lib64/libqrtrclient.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so

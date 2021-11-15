@@ -118,10 +118,17 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1
 TARGET_KERNEL_ARCH := arm64
+ifeq ($(STATIX_BUILD), true)
+TARGET_GCC_ARM32_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi/bin/arm-eabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
+KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
+KERNEL_LD := LD=$(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin/aarch64-elf-ld.bfd
+else
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r416183b1
+endif
 TARGET_KERNEL_CONFIG := vendor/osaka_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/osaka
 

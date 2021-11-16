@@ -185,6 +185,9 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := false
 # Platform
 TARGET_BOARD_PLATFORM := holi
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/sensors/dt-gesture/enable"
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 

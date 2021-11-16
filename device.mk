@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -172,6 +176,7 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc \
     init.target.rc \
     init.class_main.sh \
+    init.oem.fingerprint2.sh \
     init.qcom.sh \
     init.qcom.early_boot.sh \
     ueventd.qcom.rc

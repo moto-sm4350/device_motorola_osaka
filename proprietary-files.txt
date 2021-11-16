@@ -871,7 +871,6 @@ vendor/lib64/libtinyxml2_1.so
 vendor/bin/init.mmi.block_perm.sh
 vendor/bin/init.mmi.boot.sh
 vendor/bin/init.mmi.usb.sh
-vendor/bin/init.oem.fingerprint2.sh
 vendor/bin/init.oem.hw.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.kernel.post_boot-holi.sh

@@ -1,3 +1,4 @@
+#!/vendor/bin/sh
 script_name=${0##*/}
 script_name=${script_name%.*}
 function log {

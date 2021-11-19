@@ -1,6 +1,3 @@
-# Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
-
 # CNE
 persist.vendor.cne.feature=1
 

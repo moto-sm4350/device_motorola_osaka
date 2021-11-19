@@ -58,7 +58,6 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # Audio
 vendor/etc/audio_ext_spkr.conf
 vendor/etc/audio_platform_info.xml
-vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/mixer_paths.xml
 vendor/lib/libacdb-fts.so

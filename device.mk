@@ -50,10 +50,14 @@ $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/holi/holi.mk)
 $(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/qssi/qssi.mk)
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-core \
+    audio.bluetooth.default \
     libbatterylistener \
     libcomprcapture \
     libexthwplugin \

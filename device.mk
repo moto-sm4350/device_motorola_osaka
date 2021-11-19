@@ -132,6 +132,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# FM
+PRODUCT_PACKAGES += \
+    qcom.fmradio
+
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -276,6 +283,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     ims-moto-libs \
+    moto-telephony \
     qcrilhook \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -285,6 +293,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     ims-moto-libs \
+    moto-telephony \
     qcrilhook \
     telephony-ext
 

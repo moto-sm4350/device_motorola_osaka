@@ -277,6 +277,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     ims-moto-libs \
+    moto-telephony \
     qcrilhook \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -286,6 +287,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     ims-moto-libs \
+    moto-telephony \
     qcrilhook \
     telephony-ext
 

@@ -191,6 +191,7 @@ vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
+vendor/lib/libjnihelper.so
 vendor/lib/libwms.so
 vendor/lib/libwqe.so
 vendor/lib/libxml.so
@@ -211,6 +212,7 @@ vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
+vendor/lib64/libjnihelper.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
@@ -378,11 +380,11 @@ vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libsnsapi.so
 vendor/lib/libsnsdiaglog.so
-vendor/lib/libswregistrationalgo.so
-vendor/lib/libvideoutils.so
-vendor/lib/libvideooptfeature.so
-vendor/lib/libvidhance.so
 vendor/lib/libstagefrighthw.so
+vendor/lib/libswregistrationalgo.so
+vendor/lib/libvideooptfeature.so
+vendor/lib/libvideoutils.so
+vendor/lib/libvidhance.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_preview.so
@@ -527,11 +529,11 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libstagefrighthw.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
-vendor/lib64/libstagefrighthw.so
-vendor/lib64/libvidhance.so
 vendor/lib64/libvideooptfeature.so
+vendor/lib64/libvidhance.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera Arcsoft
@@ -725,6 +727,8 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/chipone.fingerprint.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
+vendor/lib64/libfp_ext_svc2.so
+vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
@@ -773,10 +777,12 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
-vendor/lib/libcdfw_remote_api.so
 vendor/lib/libcdfw.so
+vendor/lib/libcdfw_remote_api.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
+vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgarden_haltests_e2e.so
 vendor/lib64/libgdtap.so
@@ -789,10 +795,8 @@ vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libcdfw.so
 vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libcdfw_remote_api.so
+vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss@1.0.so
@@ -820,7 +824,6 @@ vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib/libC2D2.so
-vendor/lib/libqrtrclient.so
 vendor/lib/libCB.so
 vendor/lib/libEGL_adreno.so
 vendor/lib/libOpenCL.so
@@ -831,6 +834,7 @@ vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libq3dtools_adreno.so
+vendor/lib/libqrtrclient.so
 vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
@@ -857,8 +861,8 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libqseed3.so
 vendor/lib64/libqrtrclient.so
+vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
@@ -868,12 +872,12 @@ vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/libtinyxml2_1.so
 
 # Init
+vendor/bin/init.kernel.post_boot-holi.sh
+vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.mmi.block_perm.sh
 vendor/bin/init.mmi.boot.sh
 vendor/bin/init.mmi.usb.sh
 vendor/bin/init.oem.hw.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.kernel.post_boot-holi.sh
 vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
@@ -1021,18 +1025,23 @@ vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.perf@2.1.so
 vendor/lib/vendor.qti.hardware.perf@2.2.so
 vendor/lib64/libadaptlaunch.so
+vendor/lib64/libappclassifier.so
+vendor/lib64/libgameoptfeature.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/liblmutils-ns.so
+vendor/lib64/libmemperfd.so
 vendor/lib64/libmeters-ns.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
 vendor/lib64/libpowercore.so
+vendor/lib64/libprekill.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
+vendor/lib64/libsplh.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.perf@2.1.so
 vendor/lib64/vendor.qti.hardware.perf@2.2.so
@@ -1143,12 +1152,15 @@ system_ext/app/TeeService/lib/arm64/libTeeServiceJni.so
 -system_ext/app/embms/embms.apk
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk
 -system_ext/app/remotesimlockservice/remotesimlockservice.apk
+system_ext/etc/permissions/RemoteSimlock.xml
+system_ext/etc/permissions/RemoteSimlockManager.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
-system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/telephonyservice.xml
 -system_ext/framework/embmslibrary.jar
+-system_ext/framework/remotesimlockmanagerlibrary.jar
+-system_ext/framework/uimremotesimlocklibrary.jar
 system_ext/lib/vendor.qti.hardware.radio.am@1.0.so
 system_ext/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 system_ext/lib/vendor.qti.hardware.radio.lpa@1.0.so
@@ -1641,10 +1653,21 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # TEE
-#vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
-#vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
+vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
+vendor/app/mcRegistry/08881000000000000000000000000000.tlbin
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
 vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service
+vendor/bin/mcDriverDaemon
+vendor/bin/mot_pvclicense
+vendor/bin/rsudaemon
+vendor/bin/ssgtzd
+vendor/bin/tbaseLoader
+vendor/etc/init/init.rsu.with.pvc.rc
+vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
+vendor/lib/libMcClient.so
+vendor/lib/libMcRegistry.so
+vendor/lib/lib_modemapi_qc_hidl.so
 vendor/lib/vendor.trustonic.teeregistry@1.0.so
 vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so

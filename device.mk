@@ -190,6 +190,7 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc \
     init.target.rc \
     init.class_main.sh \
+    init.kernel.post_boot-holi.sh \
     init.oem.fingerprint2.sh \
     init.qcom.sh \
     init.qcom.early_boot.sh \

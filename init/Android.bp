@@ -81,6 +81,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.kernel.post_boot-holi.sh",
+    src: "init.kernel.post_boot-holi.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.oem.fingerprint2.sh",
     src: "init.oem.fingerprint2.sh",
     vendor: true,

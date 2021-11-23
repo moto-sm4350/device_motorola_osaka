@@ -871,7 +871,6 @@ vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
 # Init - from SRE32.64
-vendor/bin/init.kernel.post_boot-holi.sh|655c45da2e6861cc73821af412c97678eed7987e
 vendor/bin/init.kernel.post_boot.sh|a6b39a91a61c92a42dff1f8565f37917c60827f4
 vendor/bin/init.mmi.block_perm.sh|b0c14d7d4720019cbfdf38757243ff2c4c92f965
 vendor/bin/init.mmi.boot.sh|6323fa329f54ff6b22df63f392cf9dcc77b9cc5b

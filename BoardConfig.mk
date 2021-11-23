@@ -209,6 +209,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Security
+VENDOR_SECURITY_PATCH := 2021-10-01
+
 # WLAN
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn

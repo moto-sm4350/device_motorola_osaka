@@ -1,4 +1,4 @@
-# Files are from RRES31.Q2-11-52-4 unless otherwise stated
+# Files are from RRES31.Q2-11-103-2 unless otherwise stated
 
 # ADSP
 vendor/bin/adsprpcd
@@ -870,18 +870,18 @@ vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec7
 vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
-# Init
-vendor/bin/init.kernel.post_boot-holi.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.mmi.block_perm.sh
-vendor/bin/init.mmi.boot.sh
-vendor/bin/init.mmi.usb.sh
-vendor/bin/init.oem.hw.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/vendor_modprobe.sh
-vendor/etc/init/hw/init.qti.kernel.rc
-vendor/etc/init/init.qti.media.rc
+# Init - from SRE32.64
+vendor/bin/init.kernel.post_boot-holi.sh|655c45da2e6861cc73821af412c97678eed7987e
+vendor/bin/init.kernel.post_boot.sh|a6b39a91a61c92a42dff1f8565f37917c60827f4
+vendor/bin/init.mmi.block_perm.sh|b0c14d7d4720019cbfdf38757243ff2c4c92f965
+vendor/bin/init.mmi.boot.sh|6323fa329f54ff6b22df63f392cf9dcc77b9cc5b
+vendor/bin/init.mmi.usb.sh|8c27efba4692e57edd73674f7988eacdcc48f533
+vendor/bin/init.oem.hw.sh|65aeeecab2686ad6b66ad6e412b3f2f91c134e12
+vendor/bin/init.qcom.post_boot.sh|0b2c37db2066fc1cee2b62488d5c17708b1798a9
+vendor/bin/init.qti.kernel.sh|1c17e31a8edfc0b188802d280af9a85038f96b60
+vendor/bin/vendor_modprobe.sh|d6f572abb7aba5c12077607ec18c221388b86394
+vendor/etc/init/hw/init.qti.kernel.rc|b755e74695b5249f2d908a2e8d0b16160b2e0a24
+vendor/etc/init/init.qti.media.rc|ab36de06c01003fa6f665bc38709417c26d99d62
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -1673,10 +1673,12 @@ vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
 vendor/lib64/vendor.trustonic.teeregistry@1.0.so
 
+# Thermal - from stock modified
+vendor/etc/thermal-engine-denver.conf|0c014603c305db8c69ca4c9c1a589cb9f341eb85
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine-denver.conf|0c014603c305db8c69ca4c9c1a589cb9f341eb85
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so

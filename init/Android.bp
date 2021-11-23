@@ -14,6 +14,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "fstab.qcom.erofs",
+    src: "init.fstab.erofs",
+    filename: "fstab.qcom",
+    vendor: true,
+}
+
 // Recovery
 
 prebuilt_etc {

@@ -168,11 +168,20 @@ PRODUCT_PACKAGES += \
      libhwbinder.vendor
 
 # Initialization
+ifeq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.fstab.erofs:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
+PRODUCT_PACKAGES += \
+    fstab.qcom.erofs
+else
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 PRODUCT_PACKAGES += \
-    fstab.qcom \
+    fstab.qcom
+endif
+PRODUCT_PACKAGES += \
     init.mmi.rc \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \

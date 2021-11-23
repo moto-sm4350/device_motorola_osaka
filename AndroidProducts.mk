@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2021 The LineageOS Project
 # Copyright (C) 2021 The Raphielscape LLC. and The helluvaOS Project
+# Copyright (C) 2021 The LineageOS Modded Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #

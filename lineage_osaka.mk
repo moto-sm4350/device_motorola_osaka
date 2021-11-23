@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Modded Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,8 +26,8 @@ $(call inherit-product, device/motorola/osaka/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # GMS
-#$(call inherit-product, vendor/partner_gms/products/gms.mk)
-#BUILD_GMS=yes
+$(call inherit-product, vendor/partner_gms/products/gms.mk)
+BUILD_GMS=yes
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_osaka

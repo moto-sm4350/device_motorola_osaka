@@ -21,6 +21,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "fstab.qcom.zramwb",
+    src: "init.fstab.zramwb",
+    filename: "fstab.qcom.zramwb",
+    vendor: true,
+}
+
 // Recovery
 
 prebuilt_etc {

@@ -182,6 +182,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom
 endif
 PRODUCT_PACKAGES += \
+    fstab.qcom.zramwb \
     init.mmi.rc \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \

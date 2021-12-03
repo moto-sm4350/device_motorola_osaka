@@ -56,3 +56,6 @@ BUILD_FINGERPRINT := google/redfin/redfin:12/SP1A.210812.015/7679548:user/releas
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
+
+# LOS-Modded
+TARGET_MOTOCAM3_SUPPORTED := false

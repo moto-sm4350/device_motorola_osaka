@@ -684,13 +684,13 @@ vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# EmbmSSL
+# EmbmSSL - Partially from SRE32.97
 #vendor/etc/init/init.embmssl_server.rc
 vendor/bin/embmsslServer
-vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|efe4d10dc4349e27bc0941b5f9b2c2aca1cea902
+vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|33bb0c7e24b04e368a7bd8ae955b8f14242e7c22
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|0f0755727e1c643ea4acfaa5a48af8c719faefc6
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|4bc34a586b1e408b3343e4301014f08a97d0e82a
 
 # FM
 system_ext/lib/fm_helium.so
@@ -871,16 +871,17 @@ vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec7
 vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
-# Init - from SRE32.64
-vendor/bin/motobox|2441fbd3953e9b69f23635e3bef23a7a621fdeed
-vendor/bin/motobox:vendor/bin/expat|2441fbd3953e9b69f23635e3bef23a7a621fdeed
+# Init - from SRE32.97
+vendor.qti.hardware.embmssl@1.1.sovendor/bin/embmsslServer|1c646c0747f879f17a2434225de46666fe91aae2
 vendor/bin/init.kernel.post_boot.sh|a6b39a91a61c92a42dff1f8565f37917c60827f4
 vendor/bin/init.mmi.block_perm.sh|b0c14d7d4720019cbfdf38757243ff2c4c92f965
 vendor/bin/init.mmi.boot.sh|6323fa329f54ff6b22df63f392cf9dcc77b9cc5b
-vendor/bin/init.mmi.usb.sh|8c27efba4692e57edd73674f7988eacdcc48f533
+vendor/bin/init.mmi.usb.sh|c7565ad021f518565b4b1920c51c56f800f5b7af
 vendor/bin/init.oem.hw.sh|65aeeecab2686ad6b66ad6e412b3f2f91c134e12
-vendor/bin/init.qcom.post_boot.sh|0b2c37db2066fc1cee2b62488d5c17708b1798a9
+vendor/bin/init.qcom.post_boot.sh|2e05d0fbfe3d93c28a209ddd41117209ee1c0aa1
 vendor/bin/init.qti.kernel.sh|1c17e31a8edfc0b188802d280af9a85038f96b60
+vendor/bin/motobox:vendor/bin/expat|2441fbd3953e9b69f23635e3bef23a7a621fdeed
+vendor/bin/motobox|45ed50a913ac54739adf9f5a85203ab507a6de21
 vendor/bin/vendor_modprobe.sh|d6f572abb7aba5c12077607ec18c221388b86394
 vendor/etc/init/hw/init.qti.kernel.rc|b755e74695b5249f2d908a2e8d0b16160b2e0a24
 vendor/etc/init/init.qti.media.rc|ab36de06c01003fa6f665bc38709417c26d99d62

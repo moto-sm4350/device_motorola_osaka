@@ -86,6 +86,9 @@ TARGET_FS_CONFIG_GEN := \
     $(DEVICE_PATH)/config.fs \
     $(DEVICE_PATH)/mot_aids.fs
 
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml
@@ -128,7 +131,7 @@ KERNEL_LD := LD=$(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin/aarch64-e
 else
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r416183b1
+TARGET_KERNEL_CLANG_VERSION := r383902
 endif
 TARGET_KERNEL_CONFIG := vendor/osaka_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/osaka

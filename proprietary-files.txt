@@ -1145,6 +1145,7 @@ vendor/lib64/vendor.qti.qspmhal@1.0.so
 # Radio
 etc/permissions/privapp-permissions-qti.xml
 etc/sysconfig/qti_whitelist.xml
+product/etc/permissions/privapp-permissions-com.motorola.omadm.service.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/app/TeeService/lib/arm64/libTeeServiceJni.so
 -system_ext/app/TeeService/TeeService.apk
@@ -1153,6 +1154,7 @@ system_ext/app/TeeService/lib/arm64/libTeeServiceJni.so
 -system_ext/app/embms/embms.apk
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk
 -system_ext/app/remotesimlockservice/remotesimlockservice.apk
+-system_ext/app/uimgbaservice/uimgbaservice.apk
 system_ext/etc/permissions/RemoteSimlock.xml
 system_ext/etc/permissions/RemoteSimlockManager.xml
 system_ext/etc/permissions/UimGba.xml

@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Adreno
 PRODUCT_COPY_FILES += \
@@ -228,10 +228,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoActions
 
+# Motorola
+PRODUCT_PACKAGES += \
+    moto-settings
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/sm8350/display
+    hardware/qcom-caf/sm8350 \
+    hardware/qcom-caf/sm8350/display \
+    vendor/qcom/opensource/display
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *

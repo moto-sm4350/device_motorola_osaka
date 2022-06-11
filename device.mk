@@ -231,7 +231,9 @@ PRODUCT_PACKAGES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/sm8350/display
+    hardware/qcom-caf/sm8350 \
+    hardware/qcom-caf/sm8350/display \
+    vendor/qcom/opensource/display
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
